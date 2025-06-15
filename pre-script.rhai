@@ -79,6 +79,16 @@ let targets = #{
         probe_chip: "STM32743ZI"
     },
 
+    stm32f429zi: #{
+        arch: "arm",
+        rust_target: "thumbv7em-none-eabihf",
+        flash_start: "0x08000000",
+        flash_size: "2048K",
+        ram_start: "0x20000000",
+        ram_size: "192K",
+        probe_chip: "STM32429ZI"
+    },
+
     esp32c3: #{
         arch: "riscv",
         rust_target: "riscv32imc-unknown-none-elf",
